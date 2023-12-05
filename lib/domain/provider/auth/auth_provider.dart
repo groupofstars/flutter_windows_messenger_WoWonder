@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -97,7 +98,7 @@ class Auth extends _$Auth {
     try {
       final response = await auth.login(username, password);
       final configResponse = await auth.fetchConfig();
-      final s = SiteConfig.fromJson(configResponse['config']);
+      final s = SiteConfig.fromJson(configResponse);
       logger.info("login: after Siteconfig");
 
       // logger.info("login: Config response $configResponse");

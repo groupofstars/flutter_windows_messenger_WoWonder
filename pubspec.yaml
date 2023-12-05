@@ -101,6 +101,8 @@ dependencies:
   isar_flutter_libs: ^3.1.0+1
   rxdart: ^0.27.7
   http_parser: ^4.0.2
+#  aes_crypt_null_safe: ^2.0.2
+  hex: ^0.2.0
   # just_audio: ^0.9.34
 
 

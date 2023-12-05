@@ -22,7 +22,7 @@ class ApiService {
       }
       dBody['server_key'] = kServerKey;
       if (isMessage) {
-        dBody['message_hash_id'] = '44444444';
+        //dBody['message_hash_id'] = '44444444';
       }
       final res = await http.post(
         Uri.parse('$kBaseUrl/$endpoint'),
